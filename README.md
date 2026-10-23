@@ -3,14 +3,28 @@
 [pingit](https://github.com/birosrichard/pingit) is a native macOS menu bar app
 for GitHub pull requests and review requests.
 
-The first signed and notarized release is being prepared. No installable cask
-has been published yet. See the [source build instructions](https://github.com/birosrichard/pingit#build-and-run)
-in the meantime.
-
-Once the first release is verified, this tap will support:
-
 ```sh
 brew install --cask birosrichard/tap/pingit
 ```
 
-Requires macOS 14 or later. Releases support Apple Silicon and Intel.
+Requires macOS 14 or later. The app supports Apple Silicon and Intel and is
+signed with Developer ID and notarized by Apple.
+
+## Update
+
+```sh
+brew update
+brew upgrade --cask birosrichard/tap/pingit
+```
+
+## Uninstall
+
+```sh
+brew uninstall --cask birosrichard/tap/pingit
+```
+
+To remove access to GitHub, remove tokens in pingit's Settings and revoke them
+on GitHub. Uninstalling the app does not revoke tokens or erase preferences.
+
+See the [release notes](https://github.com/birosrichard/pingit/releases) and
+[source documentation](https://github.com/birosrichard/pingit) for setup details.
